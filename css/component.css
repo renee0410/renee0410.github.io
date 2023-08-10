@@ -216,11 +216,14 @@
     line-height: 70px;
     margin-left: 20px;
 }
-.header .logo i{
+.header .logo svg{
     font-size: 35px;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+}
+.header .logo svg path {
+  fill: #1B3159;
 }
 .header .logo p{
     font-size: 20px;
@@ -399,6 +402,12 @@
 .about{
     padding-top: 120px;
 }
+.about .about__context {
+  padding: 0 48px 0 48px;
+}
+.about__context h4 {
+  margin-top: 40px;
+}
 .about__context > p a{
     color: #E98074;
     text-decoration: underline;
@@ -409,8 +418,12 @@
 .about__context span > a{
     color: #484848;
 }
-.about__context span > a > i{
-    font-size: 20px;
+.about__context span > a > svg{
+    width: 20px;
+    height: 20px;
+}
+.about__context span > a > svg > path{
+  fill: #484848;
 }
 .about p{
     font-weight: 500;
@@ -418,7 +431,9 @@
     color: #484848;
 }
 .about img{
-    width: 100%;
+    width: 348px;
+    height: 348px;
+    object-fit: cover;
     border-radius: 50%;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.363);
     z-index: 1;
@@ -518,10 +533,10 @@
 .skill__icon{
     text-align: center;
 }
-.skill__icon i{
-    font-size: 35px;
-    color: #484848;
-    padding: 20px 18px 0px 18px;
+.skill__icon svg{
+  font-size: 35px;
+  fill: #484848;
+  padding: 20px 8px 0px 8px;
 }
 
 /* experience */
@@ -552,6 +567,7 @@
 }
 .experience .container{
     padding-top: 100px;
+    margin-top: 40px;
 }
     /* 照片 */
 .experience .imgBox{
@@ -836,6 +852,7 @@
 }
 .works .container{
     padding-top: 100px;
+    margin-top: 144px;
 }
 @media (max-width: 450px){
     .works .container > h5{
@@ -889,7 +906,7 @@
 }
 #posts figure img{
     object-fit: cover;
-    width: 100%;
+    width: 300px;
     height: inherit;
 
     -webkit-transform: scale(1);
@@ -977,7 +994,7 @@
     background: #F5E5C0;
 }
 .contact .container{
-    margin-top: 155px;
+    margin-top: 230px;
 }
 .contact .item-wrappe{
     position: absolute;
@@ -1040,7 +1057,12 @@
     font-size: 16px;
     margin: 10px 0;
 }
-.footer .footer_icon i{
-    font-size: 25px;
+.footer .footer_icon svg{
+    width: 25px;
+    height: 25px;
     margin: 0 5px;
+    fill: #fff;
+}
+.footer .copyright svg {
+  fill: #fff;
 }
